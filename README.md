@@ -2,7 +2,7 @@
 
 
 
-Its and application using MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
+Its an application built on  MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
 
   - Search tweets related to some keyword
   - Search tweets according to the time frame
@@ -14,7 +14,7 @@ Its and application using MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+This app uses a number of open source projects to work properly:
 
 * [Angular8] - HTML enhanced for web apps!
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
@@ -44,7 +44,8 @@ $ npm install
 $ nodemon ./bin/www // Make sure you have nodemon installed globally
 ```
 
-
+* username -logan
+* password -1234
 
 
 
