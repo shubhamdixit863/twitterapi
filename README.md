@@ -2,7 +2,7 @@
 
 
 
-Its and application using MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
+Its an application built on  MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
 
   - Search tweets related to some keyword
   - Search tweets according to the time frame
