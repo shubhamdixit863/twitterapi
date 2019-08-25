@@ -44,7 +44,8 @@ $ npm install
 $ nodemon ./bin/www // Make sure you have nodemon installed globally
 ```
 
-
+* username -logan
+* password -1234
 
 
 
