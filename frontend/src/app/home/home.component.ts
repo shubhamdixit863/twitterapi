@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   search(value ,date)
   {
     let tempdate=moment(date,"DD/MM/YYYY").format("YYYY-MM-DD")
-console.log(tempdate);
+//console.log(tempdate);
     if(value=="" || date==""){
       alert("You need to enter some values");
     }
@@ -29,7 +29,7 @@ console.log(tempdate);
       // Passing request to server to fetch the data 
       this.box.display="block";
      this.service.getTwitterdata(value,tempdate).subscribe(data=>{
-       console.log(JSON.stringify(data));
+       //console.log(JSON.stringify(data));
        this.statuses=data["statuses"];
        this.box.display="none";
      })
