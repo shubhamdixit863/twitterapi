@@ -1,0 +1,114 @@
+<html>
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+            
+        
+        <ul class="nav">
+            
+        
+            <li>   <button mat-button ><b style="font-size:17px;">Menu</b></button>
+                <!--
+                <mat-menu #menu="matMenu">
+                
+                   <button mat-menu-item>Post Tweet</button>
+                  <button mat-menu-item>Recent Searches</button>
+                
+                  
+                </mat-menu></li>
+                 -->
+        </ul>   
+        <div class="row">
+<!-- <a class="dropdown-item" (click)="logOut()" style="cursor: pointer">LogOut</a>  -->
+            <button mat-flat-button color="primary"  (click)="logOut()" style="cursor: pointer">LogOut</button>
+    </div> 
+        
+
+
+        
+    </div>
+        <!--Navbar-->
+<div class="container">
+       
+    <div id="loader" [ngStyle]="box"></div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+                <div class="example-container">
+                        <mat-form-field style="width:400px !important">  
+                          <input matInput placeholder="Enter the word to search" #term>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                                <input matInput [matDatepicker]="picker" placeholder="Choose a date for tweets" #dates>
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                              </mat-form-field>
+                      
+                        <button mat-button color="primary" (click)=search(term.value,dates.value)>Search</button>
+                      </div>
+        </div>
+
+    </div>
+
+ <div class="col-md-6" style='overflow:auto; width:800px;height:300px; margin-left:100px'>
+    <div class="row" *ngFor="let status of statuses">
+        <div class="col-sm-6 col-md-offset-3">
+            
+            <div class="panel panel-body">
+                    <div class="media">
+                        <a class="media-left" href="#fake">
+                            <img alt="" class="media-object img-rounded" src="{{status.user.profile_image_url}}" width="70" height="64">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{status.user.screen_name}}</h4>
+                            <p>{{status.text}}</p>
+                            <ul class="nav nav-pills nav-pills-custom">
+                                <li><a routerLink="home"><span class="glyphicon glyphicon-share-alt"></span></a></li>
+                                <li><a routerLink="home"><span class="glyphicon glyphicon-retweet"></span></a></li>
+                                <li><a routerLink="home"><span class="glyphicon glyphicon-star"></span></a></li>
+                                <li><a routerLink="home"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+            
+            </div>
+            </div>
+        </div>
+
+
+ </div>
+        
+
+    
+            
+
+        
+
+    
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
