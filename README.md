@@ -14,7 +14,7 @@ Its and application using MEAN Stack (MongoDb ,Express JS ,Angular and Node JS)
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+This app uses a number of open source projects to work properly:
 
 * [Angular8] - HTML enhanced for web apps!
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
